@@ -26,14 +26,143 @@
       </tags>
   </entry>
   <entry>
+    <title>Markdown简介及基本语法</title>
+    <url>/2021/08/14/Markdown%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h3 id="1-Markdown简介"><a href="#1-Markdown简介" class="headerlink" title="1. Markdown简介"></a>1. Markdown简介</h3><ul>
+<li><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。</li>
+<li><strong>Markdown</strong>也可以理解为将以Markdown语法编写的语言转换成HTML内容的工具。<span id="more"></span></li>
+</ul>
+<h3 id="2-Markdown特点"><a href="#2-Markdown特点" class="headerlink" title="2. Markdown特点"></a>2. Markdown特点</h3><ul>
+<li>易读（看起来舒服）、易写（语法简单）、易更改<strong>纯文本</strong>。</li>
+<li>兼容HTML，可以转换为HTML格式发布。</li>
+<li>跨平台使用。 </li>
+<li>越来越多的网站支持Markdown。</li>
+<li>更方便清晰地组织你的电子邮件。（Markdown-here, Airmail）</li>
+</ul>
+<h3 id="3-Markdown基本语法"><a href="#3-Markdown基本语法" class="headerlink" title="3. Markdown基本语法"></a>3. Markdown基本语法</h3><p>Markdown语法主要分为如下几大部分：<br><strong>标题</strong>，<strong>段落</strong>，<strong>区块引用</strong>，<strong>代码区块</strong>，<strong>强调</strong>，<strong>列表</strong>，<strong>分割线</strong>，<strong>链接</strong>，<strong>图片</strong>，<strong>反斜杠 <code>\</code>**，</strong>符号’`’**。</p>
+<h4 id="3-1-标题"><a href="#3-1-标题" class="headerlink" title="3.1 标题"></a>3.1 标题</h4><p>两种形式：<br>1）使用<code>=</code>和<code>-</code>标记一级和二级标题。</p>
+<blockquote>
+<p>一级标题<br><code>=========</code><br>二级标题<br><code>---------</code></p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题   "></a>一级标题   </h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
+<p>2）使用<code>#</code>，可表示1-6级标题。</p>
+<blockquote>
+<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题    </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h4 id="3-2-段落"><a href="#3-2-段落" class="headerlink" title="3.2 段落"></a>3.2 段落</h4><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用<strong>两个以上</strong>空格加上回车（引用中换行省略回车）。</p>
+<h4 id="3-3-区块引用"><a href="#3-3-区块引用" class="headerlink" title="3.3 区块引用"></a>3.3 区块引用</h4><p>在段落的每行或者只在第一行使用符号<code>&gt;</code>,还可使用多个嵌套引用，如：</p>
+<blockquote>
+<p>&gt; 区块引用<br>&gt;&gt; 嵌套引用  </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p>区块引用  </p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h4 id="3-4-代码区块"><a href="#3-4-代码区块" class="headerlink" title="3.4 代码区块"></a>3.4 代码区块</h4><p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p>
+<p>void main()<br>{<br>    printf(“Hello, Markdown.”);<br>}    </p>
+<p>代码区块：</p>
+<pre><code>void main()
+&#123;
+    printf(&quot;Hello, Markdown.&quot;);
+&#125;
+</code></pre>
+<p><strong>注意</strong>:需要和普通段落之间存在空行。</p>
+<h4 id="3-5-强调"><a href="#3-5-强调" class="headerlink" title="3.5 强调"></a>3.5 强调</h4><p>在强调内容两侧分别加上<code>*</code>或者<code>_</code>，如：</p>
+<blockquote>
+<p>*斜体*，_斜体_<br>**粗体**，__粗体__</p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><em>斜体</em>，<em>斜体</em><br><strong>粗体</strong>，<strong>粗体</strong></p>
+</blockquote>
+<h4 id="3-6-列表"><a href="#3-6-列表" class="headerlink" title="3.6 列表"></a>3.6 列表</h4><p>使用<code>·</code>、<code>+</code>、或<code>-</code>标记无序列表，如：</p>
+<blockquote>
+<p>-（+*） 第一项<br>-（+*） 第二项<br>- （+*）第三项</p>
+</blockquote>
+<p><strong>注意</strong>：标记后面最少有一个_空格_或_制表符_。若不在引用区块中，必须和前方段落之间存在空行。</p>
+<p>效果：</p>
+<blockquote>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>有序列表的标记方式是将上述的符号换成数字,并辅以<code>.</code>，如：</p>
+<blockquote>
+<p>1 . 第一项<br>2 . 第二项<br>3 . 第三项    </p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+</blockquote>
+<h4 id="3-7-分割线"><a href="#3-7-分割线" class="headerlink" title="3.7 分割线"></a>3.7 分割线</h4><p>分割线最常使用就是三个或以上<code>*</code>，还可以使用<code>-</code>和<code>_</code>。</p>
+<h4 id="3-8-链接"><a href="#3-8-链接" class="headerlink" title="3.8 链接"></a>3.8 链接</h4><p>链接可以由两种形式生成：<strong>行内式</strong>和<strong>参考式</strong>。<br><strong>行内式</strong>：</p>
+<blockquote>
+<p>[链接名称](https:://github.com/xxxxx)</p>
+</blockquote>
+<p><strong>参考式</strong>：</p>
+<blockquote>
+<p>[链接名称1][1]<br>[链接名称2][2]<br>[1]:https:://github.com/xxxxx<br>[2]:https:://github.com/xxxxx    </p>
+</blockquote>
+<p><strong>注意</strong>：上述的<code>[1]:https:://github.com/younghz/Markdown &quot;Markdown&quot;</code>不出现在区块中。</p>
+<h4 id="3-9-图片"><a href="#3-9-图片" class="headerlink" title="3.9 图片"></a>3.9 图片</h4><p>添加图片的形式和链接相似，只需在链接的基础上前方加一个<code>！</code>。</p>
+<h4 id="3-10-反斜杠"><a href="#3-10-反斜杠" class="headerlink" title="3.10 反斜杠\"></a>3.10 反斜杠<code>\</code></h4><p>相当于<strong>反转义</strong>作用。使符号成为普通符号。</p>
+<h4 id="3-11-符号’-’"><a href="#3-11-符号’-’" class="headerlink" title="3.11 符号’`’"></a>3.11 符号’`’</h4><p>起到标记作用。如：</p>
+<blockquote>
+<p>`ctrl+a`</p>
+</blockquote>
+<p>效果：</p>
+<blockquote>
+<p><code>ctrl+a</code>    </p>
+</blockquote>
+<h3 id="其它："><a href="#其它：" class="headerlink" title="其它："></a>其它：</h3><p>列表的使用(非traditonal markdown)：</p>
+<p>用<code>|</code>表示表格纵向边界，表头和表内容用<code>-</code>隔开，并可用<code>:</code>进行对齐设置，两边都有<code>:</code>则表示居中，若不加<code>:</code>则默认左对齐。</p>
+<p>效果：</p>
+<table>
+<thead>
+<tr>
+<th align="center">代码库</th>
+<th align="center">链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MarkDown</td>
+<td align="center"><a href="https://github.com/djn825">https://github.com/djn825</a></td>
+</tr>
+<tr>
+<td align="center">MarkDown</td>
+<td align="center"><a href="https://github.com/djn825">https://github.com/djn825</a></td>
+</tr>
+</tbody></table>
+<p>关于其它扩展语法可参见具体工具的使用说明。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>余秋雨《我在等你》</title>
     <url>/2021/02/24/%E4%BD%99%E7%A7%8B%E9%9B%A8%E3%80%8A%E6%88%91%E5%9C%A8%E7%AD%89%E4%BD%A0%E3%80%8B/</url>
     <content><![CDATA[<blockquote>
 <p>　　我不赞成太多地歌颂青年，而坚持认为那是一个充满陷阱的年代。陷阱一生都会遇到，但青年时代的陷阱最多、最大、最险。——余秋雨。</p>
 </blockquote>
 <span id="more"></span>
-
-
 
 <h3 id="余秋雨《我在等你》一"><a href="#余秋雨《我在等你》一" class="headerlink" title="余秋雨《我在等你》一"></a><strong>余秋雨《我在等你》一</strong></h3><p>　　来生，我依旧等你</p>
 <p>　　我藏不住秘密，也藏不住忧伤，</p>
